@@ -6,10 +6,10 @@ var car1, car2, car3, car4,cars;
 var car1Img,car2Img,car3Img,car4Img;
 var track, ground;
 function preload(){
-    car1 = loadImage("images/car1.png");
-    car2 = loadImage("images/car2.png");
-    car3 = loadImage("images/car3.png");
-    car4 = loadImage("images/car4.png");
+    car1Img = loadImage("images/car1.png");
+    car2Img = loadImage("images/car2.png");
+    car3Img = loadImage("images/car3.png");
+    car4Img = loadImage("images/car4.png");
     track = loadImage("images/track.jpg");
     ground = loadImage("images/ground.png");
 }
@@ -29,5 +29,8 @@ function draw(){
     if(gameState===1) {
         clear();
         game.play();
+    }
+    if(gameState===2) {
+        game.end();
     }
 }
